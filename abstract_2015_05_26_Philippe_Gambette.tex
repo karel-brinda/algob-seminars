@@ -1,0 +1,71 @@
+\documentclass[a4paper,12pt]{report}
+
+\usepackage{fontspec}
+\usepackage{hyperref}
+\usepackage{a4wide}
+
+\newcommand{\algob}{
+	\begin{center}
+	\large
+	AlgoB - the seminar you can't miss\\
+	{\url{http://algob.univ-mlv.fr}}
+	\end{center}
+	\medskip
+}
+
+\renewcommand{\title}[1]{
+	\begin{center}
+	{\textbf{\huge #1}}
+	\end{center}
+}
+
+\newcommand{\speaker}[2]{
+	\begin{center}
+	{\textbf{\Large #1}}\\
+	{#2}
+	\end{center}
+}
+
+\renewcommand{\date}[1]{
+	\begin{center}
+	{\large #1}
+	\end{center}
+}
+
+\newcommand{\place}[1]{
+	\begin{center}
+	{#1}
+	\end{center}
+}
+
+
+\renewcommand{\abstract}[1]{
+	\bigskip
+	{
+	\textbf{Abstract:}
+	#1
+	}
+}
+
+\thispagestyle{empty}
+
+
+
+\begin{document}
+
+\algob
+
+\title{Finding a tree in a phylogenetic network}
+
+\speaker{Philippe Gambette}{LIGM Paris-Est}
+
+\date{Tuesday, May 26 at 11:00 in 4B084}
+\place{Laboratoire d'Informatique Gaspard-Monge\\Université Paris-Est Marne-la-Vallée\\5 bd Descartes, Champs-sur-Marne}
+
+\abstract{
+A fundamental problem in the study of phylogenetic networks is to determine whether or not a given phylogenetic network contains a given phylogenetic tree. We develop a quadratic-time algorithm for this problem for binary nearly-stable phylogenetic networks. We also show that the number of reticulations in a reticulation visible or nearly stable phylogenetic network is bounded from above by a function linear in the number of taxa. Finally, we also give results on this tree containment problem for other classes of phylogenetic networks.
+
+This work was done with Andreas Gunawan, Anthony Labarre, Stéphane Vialette and Louxin Zhang.
+}
+
+\end{document}
