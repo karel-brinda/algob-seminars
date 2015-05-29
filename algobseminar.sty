@@ -2,17 +2,29 @@
 \ProvidesPackage{mypackage}
   [2011/01/11 v0.01 LaTeX package for my own purpose]
 
-%\RequirePackage{whateverwe need}
-
 \usepackage{hyperref}
+\usepackage[margin=1in]{geometry}
 
 
 \newcommand{\algob}{
-	\begin{center}
+	\begin{tabular}{p{5.2cm}p{5.2cm}r}
+		\includegraphics[height=2cm]{algob_logo.png}
+		&
+		\includegraphics[height=3cm]{qr_seminar.png}		
+		&
+		\includegraphics[height=3cm]{ligm_logo.png}
+	\end{tabular}
+
 	\large
-	AlgoB - the seminar you can't miss\\
-	{\url{http://algob.univ-mlv.fr}}
+
+	\begin{center}
+	\textbf{AlgoB}
+
+	 the seminar you can't miss
+
+	{\url{http://algob.univ-mlv.fr/seminar}}
 	\end{center}
+
 	\medskip
 }
 
